@@ -227,25 +227,82 @@
 
 // if (favourite !== 23) console.log(`Why not 23?`); 
 
-const hasDriversLicense = true;
-const hasGoodVision = true;
+// const hasDriversLicense = true;
+// const hasGoodVision = true;
 
-console.log(hasDriversLicense && hasGoodVision);
-console.log(hasDriversLicense || hasGoodVision);
-console.log(!hasDriversLicense);
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
 
 
-// if (hasDriversLicense && hasGoodVision) {
+// // if (hasDriversLicense && hasGoodVision) {
+// //     console.log(`Sarah is able to drive!`)
+// // } else {
+// //     console.log(`Someone else should drive...`)
+// // }
+
+// const isTired = false;
+// console.log(hasDriversLicense && hasGoodVision && isTired);
+
+// if (hasDriversLicense && hasGoodVision && !isTired) {
 //     console.log(`Sarah is able to drive!`)
 // } else {
 //     console.log(`Someone else should drive...`)
 // }
 
-const isTired = false;
-console.log(hasDriversLicense && hasGoodVision && isTired);
 
-if (hasDriversLicense && hasGoodVision && !isTired) {
-    console.log(`Sarah is able to drive!`)
+// const scoreDolphins = (96 + 108 + 89)/3;
+// const scoreKoalas = (88 + 91 + 110)/3;
+
+// if (scoreDolphins > scoreKoalas) {
+//     console.log(`Dolphins win the trophy`);
+// } else {
+//     console.log(`Koalas win the trophy`);
+// } else if (scoreDolphins === scoreKoalas) {
+//     console.log(`Both win the trophy!`);
+// }
+
+
+const day = `monday`;
+
+switch(day) {
+    case `monday`: // day === `monday`
+        console.log(`Plan course structure`);
+        console.log(`Go to codeing meetup`);
+        break;
+    case `tuesday`:
+        console.log(`Prepare theory videos`);
+        break;
+    case `wednesday`:
+    case `thursday`:
+        console.log(`Write code examples`);
+        break;
+    case `friday`:
+        console.log(`Record videos`);
+        break;
+    case `saturday`:
+    case `sunday`:
+        console.log(`Enjoy the weekend :D`);
+        break;
+    default:
+        console.log(`Not a valid day!`);
+        break;
+}
+
+if (day === `monday`) {
+    console.log(`Plan course structure`);
+    console.log(`Go to codeing meetup`);
+} else if (day === `tuesday`) {
+    console.log(`Prepare theory videos`);
+}
+else if (day === `wednessday` || day === `thursday`) {
+    console.log(`Write code examples`);
+}
+else if (day === `friday`) {
+    console.log(`Record videos`);
+}
+else if (day === `saturday` || day === `sunday`) {
+    console.log(`Enjoy the weekend :D`);
 } else {
-    console.log(`Someone else should drive...`)
+    console.log(`Not a valid day!`);
 }
